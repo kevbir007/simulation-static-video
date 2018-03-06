@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="index.css" rel="stylesheet">
+    <title>Oh Hi There</title> <!-- 58C -->
+    <style type="text/css">
+        #Video { /*22C-1*/
+            height: 450px;
+            width: 650px;
+            background: url('./assets/vid1.mp4');
+            background-size: cover;
+            border: black solid 1px;/*24D*/
+            box-sizing: border-box;
+        }
+
+        .Header + p { /*22C-5*/
+            color: red;
+            margin-top: 100px;/*24C*/
+            
+        }
+
+        .Title:nth-child(3) { /*26L*/
+            color: palevioletred;
+            text-shadow: 2px 2px; /*text effect*/
+        }
+
+        .Random > p { /*22C-3*/
+            color: rebeccapurple;
+        }
+
+        input:focus {  /*26G*/
+            background-color: yellow;
+            height: 20px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body class="Main-body"><!-- 22C-4 -->
+    <header class="Header">
+        <p class="Title">The Web's Best Code Tutorials!</p>
+    </header>
+    <p class="Title">Videos</p>
+    <p class="Title">Are</p>
+    <h1 class="Title">Great!</h1> <!-- 54F -->
+    <div class="pizza"></div>
+    <section class="Video-container">
+        <video controls id="Video"><!-- 56C 56D this repo did not have an audio on file, but I looked it up and it was almost the exact same thing from what I could tell -->
+            <source src="./assets/vid1.mp4" type="video/mp4">
+        </video>
+        <video controls id="Video">
+            <source src="./assets/vid2.mp4" type="video/mp4">
+        </video>
+        <video controls id="Video">
+            <source src="./assets/vid3.mp4" type="video/mp4">
+        </video>
+        <video controls id="Video">
+            <source src="./assets/vid4.mp4" type="video/mp4">
+        </video>
+        <video controls class="Video-bot">
+            <source src="./assets/kittens-puppies.mp4" type="video/mp4">
+        </video>
+    </section>
+    <div class="Footer">
+        <button class="Random">
+            <p class="Random-color">Random Video</p>
+        </button>
+        <input class="Input">See Focus</input>
+    </div>
+</body>
+</html>

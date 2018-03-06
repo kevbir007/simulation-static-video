@@ -1,0 +1,81 @@
+.Main-body { /*22C-2*/
+    height: 100vh;
+    width: 100vw;
+}
+
+.Header {
+    position: fixed; /*25C I CAN TELL YOU THE OTHER POSITIONS IF NEEDED*/
+    top: 0;
+    display: flex; /*25F*/
+    flex-direction: row;/*27F*/
+    align-items: center;/*27D*/
+    justify-content: center;/*27C*/
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(19, 173, 212);/*23E*/
+}
+
+.Title {
+    font-size: 50px;
+    font-weight: bold; /*23D*/
+    /* color: midnightblue */
+}
+
+.pizza {
+    height: 100px;
+    width: 100px;
+    background-image: url('./assets/frowny-pizza.jpg'); /*23F*/
+    background-size: contain;
+    float: right;/*25D*/
+}
+
+.Video-container {
+    display: flex; /*27G*/
+    justify-content: space-around;
+    flex-wrap: wrap;/*27E*/
+    /* height: 70vh; */
+}
+
+/* .Video {
+    height: 450px;
+    width: 650px;
+    background: url('./assets/vid1.mp4');
+    background-size: cover;
+    margin-top: 110px;
+    border: black solid 1px;
+} */
+
+.Video-bot {
+    height: 450px;
+    width: 650px;
+    background: url('./assets/vid1.mp4');
+    background-size: cover;
+    /* margin-top: 120px; */
+    margin-bottom: 80px;
+    padding: 50px;
+    box-sizing: border-box; /*24F*/
+}
+
+.Footer {
+    position: fixed;
+    bottom: 0;
+    padding: 5px;/*24E*/
+    height: 60px;
+    width: 100vw;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 120px;
+}
+
+.Random-color {
+    margin-bottom: 5px;
+}
